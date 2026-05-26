@@ -3,136 +3,286 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yuanyang Liu | Personal Homepage</title>
+  <title>Yuanyang Liu | Embodied AI & Robot Manipulation</title>
+  <meta
+    name="description"
+    content="Yuanyang Liu's personal academic homepage. Research interests include embodied AI, robot manipulation, underwater grasping, dynamic target perception, and robust manipulation."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Yuanyang Liu</h1>
-        <p class="subtitle">
-          Graduate Student | Embodied AI | Robot Manipulation | Underwater Grasping
-        </p>
-        <p>
-          Welcome to my personal homepage. My research focuses on embodied AI,
-          robot manipulation, underwater grasping, dynamic target perception,
-          disturbance robustness, and recovery under action execution deviation.
-        </p>
-        <div class="buttons">
-          <a href="#research" class="btn">Research</a>
-          <a href="#projects" class="btn btn-outline">Projects</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <h3>About Me</h3>
-        <p>
-          I am currently interested in robust robotic manipulation in challenging environments,
-          especially underwater/deep-sea grasping under target disturbance and visual uncertainty.
-        </p>
-      </div>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="logo">Yuanyang Liu</a>
+
+      <nav class="nav-links">
+        <a href="#about" data-i18n="nav_about">关于</a>
+        <a href="#research" data-i18n="nav_research">研究方向</a>
+        <a href="#projects" data-i18n="nav_projects">项目</a>
+        <a href="#publications" data-i18n="nav_publications">论文</a>
+        <a href="#notes" data-i18n="nav_notes">笔记</a>
+        <a href="#contact" data-i18n="nav_contact">联系</a>
+      </nav>
+
+      <button id="langToggle" class="lang-toggle">English</button>
     </div>
   </header>
 
-  <nav class="navbar">
-    <div class="container nav-links">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
   <main>
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>
-          I am a graduate student working on robot manipulation and embodied intelligence.
-          My recent interests include underwater robotic grasping, dynamic target perception,
-          disturbance-aware manipulation, and robust policy learning.
-        </p>
-        <p>
-          I am building a minimal closed-loop research system around vision, localization,
-          grasp execution, disturbance handling, and recovery.
-        </p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow" data-i18n="hero_eyebrow">
+            具身智能 · 机器人操作 · 水下抓取
+          </p>
+
+          <h1 data-i18n="hero_title">
+            面向扰动环境的机器人操作与水下抓取研究
+          </h1>
+
+          <p class="hero-description" data-i18n="hero_description">
+            我关注 embodied AI 与 robot manipulation，重点研究水下/类水下环境中的动态目标感知、目标扰动、动作执行偏差与恢复策略，目标是构建可验证、可复现、能在真实机器人系统中闭环运行的 manipulation pipeline。
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="button primary" data-i18n="hero_button_projects">
+              查看项目
+            </a>
+            <a href="#contact" class="button secondary" data-i18n="hero_button_contact">
+              联系我
+            </a>
+          </div>
+
+          <div class="quick-info">
+            <div>
+              <span class="quick-label" data-i18n="quick_role_label">身份</span>
+              <span data-i18n="quick_role_value">硕博生 / Graduate Student</span>
+            </div>
+            <div>
+              <span class="quick-label" data-i18n="quick_focus_label">方向</span>
+              <span data-i18n="quick_focus_value">Robot Manipulation</span>
+            </div>
+            <div>
+              <span class="quick-label" data-i18n="quick_email_label">邮箱</span>
+              <span>2283523323@qq.com</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <div class="avatar-wrap">
+            <img src="avatar.jpg" alt="Yuanyang Liu" class="avatar" />
+          </div>
+
+          <h2>Yuanyang Liu</h2>
+          <p class="profile-subtitle" data-i18n="profile_subtitle">
+            Embodied AI / Robot Manipulation Researcher
+          </p>
+
+          <p class="profile-text" data-i18n="profile_text">
+            Current focus: robust underwater grasping under target disturbance, visual uncertainty, and action execution deviation.
+          </p>
+
+          <div class="profile-links">
+            <a href="mailto:2283523323@qq.com">Email</a>
+            <a href="https://github.com/Yuanyang0806" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section id="research" class="section alt">
+    <section id="about" class="section">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker" data-i18n="about_kicker">About</p>
+          <h2 data-i18n="about_title">关于我</h2>
+        </div>
+
+        <div class="content-block">
+          <p data-i18n="about_p1">
+            我是一名具身智能与机器人操作方向的研究生，研究兴趣集中在 robot manipulation、动态目标感知、抗扰操作、模仿学习、强化学习以及真实机器人系统中的闭环执行问题。
+          </p>
+
+          <p data-i18n="about_p2">
+            目前我的研究主线是水下/类水下抓取：在深度感知不可靠、目标存在平面扰动、动作执行存在偏差的条件下，设计一个可以感知、决策、执行并恢复的最小闭环系统。
+          </p>
+
+          <p data-i18n="about_p3">
+            我更关注可以被真实系统验证的问题：失败边界、扰动建模、恢复策略、评估指标、可复现实验流程，以及从工程系统中提炼出的科研问题。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section muted">
       <div class="container">
-        <h2>Research Interests</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Underwater Grasping</h3>
-            <p>Robust grasping and manipulation in underwater or deep-sea-inspired environments.</p>
-          </div>
-          <div class="card">
-            <h3>Dynamic Target Perception</h3>
-            <p>Perception and tracking for disturbed or moving targets in manipulation tasks.</p>
-          </div>
-          <div class="card">
-            <h3>Disturbance & Recovery</h3>
-            <p>Handling execution deviation, target disturbance, and recovery strategies.</p>
-          </div>
-          <div class="card">
-            <h3>Embodied AI</h3>
-            <p>Learning-based manipulation policies that can generalize across settings.</p>
-          </div>
+        <p class="section-kicker" data-i18n="research_kicker">Research</p>
+        <h2 data-i18n="research_title">研究方向</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3 data-i18n="research_1_title">水下机器人抓取</h3>
+            <p data-i18n="research_1_text">
+              研究水下/类水下环境中的目标定位、抓取执行、扰动处理与闭环恢复，关注从实验系统到可复现实验协议的完整链路。
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="research_2_title">动态目标感知</h3>
+            <p data-i18n="research_2_text">
+              面向运动或受扰动目标，研究视觉跟踪、目标状态估计、时序感知与面向操作任务的动态表征。
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="research_3_title">抗扰操作与恢复策略</h3>
+            <p data-i18n="research_3_text">
+              研究动作执行偏差、目标扰动、接触不确定性下的失败检测、重规划、纠偏与恢复控制。
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="research_4_title">具身智能与策略学习</h3>
+            <p data-i18n="research_4_text">
+              关注 imitation learning、policy learning、VLA、diffusion policy 等方法在真实 manipulation 任务中的泛化与失效模式。
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container">
-        <h2>Projects</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Underwater Object Grasping with Disturbance Recovery</h3>
-            <p>
-              A robotic manipulation pipeline studying target disturbance,
-              action execution deviation, and recovery mechanisms in underwater grasping.
+        <p class="section-kicker" data-i18n="projects_kicker">Projects</p>
+        <h2 data-i18n="projects_title">项目与系统</h2>
+
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-meta">Ongoing</div>
+            <h3 data-i18n="project_1_title">
+              Underwater Object Grasping with Disturbance Recovery
+            </h3>
+            <p data-i18n="project_1_text">
+              一个面向水下/类水下环境的抓取研究系统，重点研究目标扰动、动作执行偏差、抓取失败检测与恢复策略。
             </p>
-          </div>
-          <div class="card">
-            <h3>D435i + SO101 Visual Grasping System</h3>
-            <p>
-              A minimal closed-loop system integrating visual perception,
-              target localization, and manipulator execution.
+            <ul>
+              <li data-i18n="project_1_li1">目标：建立可复现的扰动抓取 benchmark</li>
+              <li data-i18n="project_1_li2">变量：目标平面扰动、视觉误差、执行偏差</li>
+              <li data-i18n="project_1_li3">输出：成功率、恢复率、轨迹偏差、失败类型分析</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">System</div>
+            <h3 data-i18n="project_2_title">
+              D435i + SO101 Visual Grasping Pipeline
+            </h3>
+            <p data-i18n="project_2_text">
+              基于 RealSense D435i 与 LeRobot SO101 构建的最小闭环视觉抓取系统，用于验证目标定位、坐标标定、动作执行与反馈更新。
             </p>
-          </div>
-          <div class="card">
-            <h3>Planar Disturbance Platform for Manipulation Research</h3>
-            <p>
-              A controlled experimental setup for studying target perturbation,
-              grasp robustness, and manipulation under disturbances.
+            <ul>
+              <li data-i18n="project_2_li1">视觉：目标检测与 board_xy 坐标估计</li>
+              <li data-i18n="project_2_li2">执行：SO101 机械臂动作控制与抓取</li>
+              <li data-i18n="project_2_li3">目标：先跑通 v0，再逐步增加扰动与恢复机制</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">Experiment</div>
+            <h3 data-i18n="project_3_title">
+              Planar Disturbance Platform for Manipulation
+            </h3>
+            <p data-i18n="project_3_text">
+              计划构建二轴平面扰动平台，用于系统性研究目标运动、扰动频率、扰动幅值与抓取策略之间的关系。
+            </p>
+            <ul>
+              <li data-i18n="project_3_li1">控制变量：扰动方向、速度、幅值、频率</li>
+              <li data-i18n="project_3_li2">研究问题：何时需要预测，何时只需反馈修正</li>
+              <li data-i18n="project_3_li3">目标：形成更扎实的实验论证链条</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section muted">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker" data-i18n="publications_kicker">Publications</p>
+          <h2 data-i18n="publications_title">论文与成果</h2>
+        </div>
+
+        <div class="content-block">
+          <p data-i18n="publications_text">
+            论文、预印本、技术报告和开源项目将在这里更新。目前该页面主要用于记录研究方向、项目系统和实验进展。
+          </p>
+
+          <div class="empty-box">
+            <strong data-i18n="publications_empty_title">Coming soon</strong>
+            <p data-i18n="publications_empty_text">
+              Future publications, preprints, posters, and code repositories will be listed here.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="publications" class="section alt">
+    <section id="notes" class="section">
       <div class="container">
-        <h2>Publications</h2>
-        <p>Coming soon. Preprints, papers, and technical notes will be listed here.</p>
+        <p class="section-kicker" data-i18n="notes_kicker">Notes</p>
+        <h2 data-i18n="notes_title">技术笔记</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3 data-i18n="notes_1_title">机器人系统搭建</h3>
+            <p data-i18n="notes_1_text">
+              记录相机、机械臂、标定、ROS 2、LeRobot、数据采集与实验调试过程。
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="notes_2_title">论文阅读</h3>
+            <p data-i18n="notes_2_text">
+              梳理 manipulation、VLA、diffusion policy、sim-to-real、contact-rich manipulation 相关论文。
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="notes_3_title">实验复盘</h3>
+            <p data-i18n="notes_3_text">
+              分析失败案例、系统误差、数据分布、seed variance、消融实验与评估指标。
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email: your_email@example.com</p>
-        <p>GitHub: <a href="https://github.com/Yuanyang0806" target="_blank">github.com/Yuanyang0806</a></p>
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card">
+        <div>
+          <p class="section-kicker" data-i18n="contact_kicker">Contact</p>
+          <h2 data-i18n="contact_title">联系我</h2>
+          <p data-i18n="contact_text">
+            如果你对 robot manipulation、underwater grasping、embodied AI 或真实机器人系统研究感兴趣，可以通过邮箱或 GitHub 联系我。
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:2283523323@qq.com">2283523323@qq.com</a>
+          <a href="https://github.com/Yuanyang0806" target="_blank" rel="noopener">github.com/Yuanyang0806</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Yuanyang Liu. All rights reserved.</p>
+    <div class="container footer-content">
+      <span>© 2026 Yuanyang Liu</span>
+      <span data-i18n="footer_text">Built with GitHub Pages</span>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
