@@ -1,120 +1,99 @@
 const translations = {
   zh: {
-    nav_about: "关于",
-    nav_research: "研究方向",
+    nav_home: "首页",
+    nav_research: "研究",
     nav_projects: "项目",
     nav_publications: "论文",
     nav_notes: "笔记",
+    nav_cv: "CV",
     nav_contact: "联系",
 
-    hero_eyebrow: "具身智能 · 机器人操作 · 水下抓取",
-    hero_title: "面向扰动环境的机器人操作与水下抓取研究",
+    hero_eyebrow: "Embodied AI · Robot Manipulation · Underwater Grasping",
+    hero_title: "机器人操作与水下抓取",
     hero_description:
-      "我关注 embodied AI 与 robot manipulation，重点研究水下/类水下环境中的动态目标感知、目标扰动、动作执行偏差与恢复策略，目标是构建可验证、可复现、能在真实机器人系统中闭环运行的 manipulation pipeline。",
+      "我正在学习和搭建真实机器人操作系统，关注动态目标感知、抗扰抓取和闭环执行。当前重点是先跑通一个可靠的最小闭环，再逐步扩展到扰动、恢复和泛化问题。",
     hero_button_projects: "查看项目",
-    hero_button_contact: "联系我",
+    hero_button_cv: "查看 CV",
 
     quick_role_label: "身份",
-    quick_role_value: "硕博生 / Graduate Student",
+    quick_role_value: "研究生",
     quick_focus_label: "方向",
     quick_focus_value: "Robot Manipulation",
     quick_email_label: "邮箱",
 
-    profile_subtitle: "Embodied AI / Robot Manipulation Researcher",
-    profile_text:
-      "Current focus: robust underwater grasping under target disturbance, visual uncertainty, and action execution deviation.",
+    profile_subtitle: "Embodied AI / Robot Manipulation",
+    profile_text: "Building small, testable robotic manipulation systems.",
+
+    motto_kicker: "Motto",
+    motto_title: "科研鸡汤，但要能落到实验里",
+    motto_button: "换一句",
 
     about_kicker: "About",
     about_title: "关于我",
     about_p1:
-      "我是一名具身智能与机器人操作方向的研究生，研究兴趣集中在 robot manipulation、动态目标感知、抗扰操作、模仿学习、强化学习以及真实机器人系统中的闭环执行问题。",
+      "我关注具身智能与机器人操作，正在围绕视觉定位、机械臂控制、抓取执行和实验复盘搭建自己的研究系统。",
     about_p2:
-      "目前我的研究主线是水下/类水下抓取：在深度感知不可靠、目标存在平面扰动、动作执行存在偏差的条件下，设计一个可以感知、决策、执行并恢复的最小闭环系统。",
+      "目前的主要任务是把 D435i / 双目视觉、SO101 机械臂和水下/类水下抓取实验串成一个可运行的闭环。",
     about_p3:
-      "我更关注可以被真实系统验证的问题：失败边界、扰动建模、恢复策略、评估指标、可复现实验流程，以及从工程系统中提炼出的科研问题。",
+      "我希望后续工作能更清楚地回答：扰动从哪里来，系统何时失败，怎样恢复，以及哪些实验指标真正说明问题。",
 
     research_kicker: "Research",
     research_title: "研究方向",
-    research_1_title: "水下机器人抓取",
-    research_1_text:
-      "研究水下/类水下环境中的目标定位、抓取执行、扰动处理与闭环恢复，关注从实验系统到可复现实验协议的完整链路。",
+    research_1_title: "水下机器人操作",
+    research_1_text: "围绕水下/类水下抓取，研究视觉定位、抓取执行和实验系统搭建。",
     research_2_title: "动态目标感知",
-    research_2_text:
-      "面向运动或受扰动目标，研究视觉跟踪、目标状态估计、时序感知与面向操作任务的动态表征。",
-    research_3_title: "抗扰操作与恢复策略",
-    research_3_text:
-      "研究动作执行偏差、目标扰动、接触不确定性下的失败检测、重规划、纠偏与恢复控制。",
-    research_4_title: "具身智能与策略学习",
-    research_4_text:
-      "关注 imitation learning、policy learning、VLA、diffusion policy 等方法在真实 manipulation 任务中的泛化与失效模式。",
+    research_2_text: "关注受扰动目标的检测、跟踪、状态估计和面向抓取的反馈更新。",
+    research_3_title: "抗扰抓取",
+    research_3_text: "分析目标扰动、动作偏差和失败恢复，不只看成功率，也看失败类型。",
+    research_4_title: "策略学习",
+    research_4_text: "学习 imitation learning、policy learning、diffusion policy 和 VLA 在操作任务中的用法。",
 
     projects_kicker: "Projects",
-    projects_title: "项目与系统",
-
-    project_1_title: "Underwater Object Grasping with Disturbance Recovery",
-    project_1_text:
-      "一个面向水下/类水下环境的抓取研究系统，重点研究目标扰动、动作执行偏差、抓取失败检测与恢复策略。",
-    project_1_li1: "目标：建立可复现的扰动抓取 benchmark",
-    project_1_li2: "变量：目标平面扰动、视觉误差、执行偏差",
-    project_1_li3: "输出：成功率、恢复率、轨迹偏差、失败类型分析",
-
-    project_2_title: "D435i + SO101 Visual Grasping Pipeline",
-    project_2_text:
-      "基于 RealSense D435i 与 LeRobot SO101 构建的最小闭环视觉抓取系统，用于验证目标定位、坐标标定、动作执行与反馈更新。",
-    project_2_li1: "视觉：目标检测与 board_xy 坐标估计",
-    project_2_li2: "执行：SO101 机械臂动作控制与抓取",
-    project_2_li3: "目标：先跑通 v0，再逐步增加扰动与恢复机制",
-
-    project_3_title: "Planar Disturbance Platform for Manipulation",
-    project_3_text:
-      "计划构建二轴平面扰动平台，用于系统性研究目标运动、扰动频率、扰动幅值与抓取策略之间的关系。",
-    project_3_li1: "控制变量：扰动方向、速度、幅值、频率",
-    project_3_li2: "研究问题：何时需要预测，何时只需反馈修正",
-    project_3_li3: "目标：形成更扎实的实验论证链条",
-
-    publications_kicker: "Publications",
-    publications_title: "论文与成果",
-    publications_text:
-      "论文、预印本、技术报告和开源项目将在这里更新。目前该页面主要用于记录研究方向、项目系统和实验进展。",
-    publications_empty_title: "Coming soon",
-    publications_empty_text:
-      "Future publications, preprints, posters, and code repositories will be listed here.",
+    projects_title: "项目",
+    project_1_text: "一个最小闭环视觉抓取系统：目标检测、坐标标定、机械臂执行、结果记录。",
+    project_2_text: "面向水下/类水下环境的目标定位，重点关注折射影响、深度不可靠和双目 RGB 替代方案。",
+    project_3_text: "用二轴平面扰动平台研究目标运动、抓取时机、反馈修正和恢复策略。",
+    project_4_text: "预留方向：用于整理仿真、数据采集、策略学习和真实机器人验证的实验流程。",
 
     notes_kicker: "Notes",
     notes_title: "技术笔记",
-    notes_1_title: "机器人系统搭建",
-    notes_1_text:
-      "记录相机、机械臂、标定、ROS 2、LeRobot、数据采集与实验调试过程。",
+    notes_1_title: "系统搭建",
+    notes_1_text: "相机、机械臂、ROS 2、LeRobot、标定和调试记录。",
     notes_2_title: "论文阅读",
-    notes_2_text:
-      "梳理 manipulation、VLA、diffusion policy、sim-to-real、contact-rich manipulation 相关论文。",
+    notes_2_text: "manipulation、VLA、diffusion policy、sim-to-real 等阅读笔记。",
     notes_3_title: "实验复盘",
-    notes_3_text:
-      "分析失败案例、系统误差、数据分布、seed variance、消融实验与评估指标。",
+    notes_3_text: "失败案例、误差来源、指标设计、消融和可视化。",
+    notes_4_title: "全部笔记",
+    notes_4_text: "进入笔记索引页，后续可以持续添加 Obsidian Markdown 内容。",
+
+    card_more: "查看详情 →",
+
+    cv_title: "简历",
+    cv_text: "这里放教育经历、技能、项目、论文和奖项。当前先作为网页简历，之后可以再上传 PDF 版本。",
+    cv_button_web: "查看网页 CV",
+    cv_button_pdf: "下载 PDF CV（可选）",
 
     contact_kicker: "Contact",
-    contact_title: "联系我",
-    contact_text:
-      "如果你对 robot manipulation、underwater grasping、embodied AI 或真实机器人系统研究感兴趣，可以通过邮箱或 GitHub 联系我。",
-
+    contact_title: "联系",
+    contact_text: "欢迎就机器人操作、水下抓取、具身智能和真实机器人系统交流。",
     footer_text: "Built with GitHub Pages"
   },
 
   en: {
-    nav_about: "About",
+    nav_home: "Home",
     nav_research: "Research",
     nav_projects: "Projects",
     nav_publications: "Publications",
     nav_notes: "Notes",
+    nav_cv: "CV",
     nav_contact: "Contact",
 
     hero_eyebrow: "Embodied AI · Robot Manipulation · Underwater Grasping",
-    hero_title:
-      "Robot Manipulation and Underwater Grasping under Disturbance",
+    hero_title: "Robot Manipulation and Underwater Grasping",
     hero_description:
-      "I work on embodied AI and robot manipulation, with a focus on dynamic target perception, target disturbance, action execution deviation, and recovery strategies in underwater or underwater-inspired environments. My goal is to build verifiable, reproducible, closed-loop manipulation pipelines on real robotic systems.",
+      "I am building and studying real robotic manipulation systems, with interests in dynamic target perception, robust grasping, and closed-loop execution. My current goal is to first make a reliable minimal loop work, then extend it to disturbance, recovery, and generalization.",
     hero_button_projects: "View Projects",
-    hero_button_contact: "Contact Me",
+    hero_button_cv: "View CV",
 
     quick_role_label: "Role",
     quick_role_value: "Graduate Student",
@@ -122,85 +101,86 @@ const translations = {
     quick_focus_value: "Robot Manipulation",
     quick_email_label: "Email",
 
-    profile_subtitle: "Embodied AI / Robot Manipulation Researcher",
-    profile_text:
-      "Current focus: robust underwater grasping under target disturbance, visual uncertainty, and action execution deviation.",
+    profile_subtitle: "Embodied AI / Robot Manipulation",
+    profile_text: "Building small, testable robotic manipulation systems.",
+
+    motto_kicker: "Motto",
+    motto_title: "Research motivation, grounded in experiments",
+    motto_button: "New line",
 
     about_kicker: "About",
     about_title: "About Me",
     about_p1:
-      "I am a graduate student working on embodied AI and robot manipulation. My research interests include robot manipulation, dynamic target perception, robust manipulation, imitation learning, reinforcement learning, and closed-loop execution on real robotic systems.",
+      "I work on embodied AI and robot manipulation. I am building my research system around visual localization, arm control, grasp execution, and experiment review.",
     about_p2:
-      "My current research thread focuses on underwater or underwater-inspired grasping: designing a minimal closed-loop system that can perceive, decide, execute, and recover when depth sensing is unreliable, targets are disturbed, and robot actions deviate from their nominal execution.",
+      "My current task is to connect D435i / stereo vision, the SO101 arm, and underwater-inspired grasping experiments into a working closed-loop system.",
     about_p3:
-      "I care about problems that can be validated on physical systems: failure boundaries, disturbance modeling, recovery strategies, evaluation metrics, reproducible experimental pipelines, and research questions extracted from engineering systems.",
+      "I want my later work to answer concrete questions: where disturbances come from, when the system fails, how recovery should work, and which metrics truly explain the result.",
 
     research_kicker: "Research",
     research_title: "Research Interests",
-    research_1_title: "Underwater Robotic Grasping",
-    research_1_text:
-      "Robust grasping and manipulation in underwater or underwater-inspired environments, from target localization and grasp execution to disturbance handling and recovery.",
+    research_1_title: "Underwater Robotic Manipulation",
+    research_1_text: "Visual localization, grasp execution, and experimental systems for underwater-inspired manipulation.",
     research_2_title: "Dynamic Target Perception",
-    research_2_text:
-      "Visual tracking, target state estimation, temporal perception, and manipulation-oriented representations for moving or disturbed objects.",
-    research_3_title: "Disturbance and Recovery",
-    research_3_text:
-      "Failure detection, replanning, correction, and recovery under action deviation, target disturbance, and contact uncertainty.",
-    research_4_title: "Embodied AI and Policy Learning",
-    research_4_text:
-      "Generalization and failure modes of imitation learning, policy learning, VLA models, and diffusion policies in real manipulation tasks.",
+    research_2_text: "Detection, tracking, state estimation, and feedback updates for disturbed targets.",
+    research_3_title: "Robust Grasping",
+    research_3_text: "Target disturbance, action deviation, failure recovery, and failure-type analysis beyond success rate.",
+    research_4_title: "Policy Learning",
+    research_4_text: "Learning how imitation learning, policy learning, diffusion policy, and VLA methods are used in manipulation.",
 
     projects_kicker: "Projects",
-    projects_title: "Projects and Systems",
-
-    project_1_title: "Underwater Object Grasping with Disturbance Recovery",
-    project_1_text:
-      "A robotic manipulation system for underwater-inspired grasping, focusing on target disturbance, action execution deviation, failure detection, and recovery strategies.",
-    project_1_li1: "Goal: build a reproducible disturbed-grasping benchmark",
-    project_1_li2: "Variables: planar target disturbance, visual error, execution deviation",
-    project_1_li3: "Outputs: success rate, recovery rate, trajectory deviation, failure taxonomy",
-
-    project_2_title: "D435i + SO101 Visual Grasping Pipeline",
-    project_2_text:
-      "A minimal closed-loop visual grasping system based on RealSense D435i and LeRobot SO101, used to validate target localization, coordinate calibration, execution, and feedback updates.",
-    project_2_li1: "Vision: target detection and board_xy coordinate estimation",
-    project_2_li2: "Execution: SO101 arm control and grasp execution",
-    project_2_li3: "Goal: first complete v0, then add disturbance and recovery mechanisms",
-
-    project_3_title: "Planar Disturbance Platform for Manipulation",
-    project_3_text:
-      "A planned two-axis planar disturbance platform for systematically studying target motion, disturbance frequency, disturbance amplitude, and grasping strategy.",
-    project_3_li1: "Controlled variables: direction, speed, amplitude, and frequency",
-    project_3_li2: "Research question: when is prediction necessary, and when is feedback correction sufficient?",
-    project_3_li3: "Goal: build a stronger experimental argument chain",
-
-    publications_kicker: "Publications",
-    publications_title: "Publications and Outputs",
-    publications_text:
-      "Papers, preprints, technical reports, and open-source projects will be updated here. For now, this page records my research direction, system development, and experimental progress.",
-    publications_empty_title: "Coming soon",
-    publications_empty_text:
-      "Future publications, preprints, posters, and code repositories will be listed here.",
+    projects_title: "Projects",
+    project_1_text: "A minimal closed-loop visual grasping system: target detection, coordinate calibration, arm execution, and logging.",
+    project_2_text: "Target localization for underwater-inspired settings, focusing on refraction, unreliable depth, and stereo RGB alternatives.",
+    project_3_text: "A two-axis planar disturbance platform for studying target motion, grasp timing, feedback correction, and recovery.",
+    project_4_text: "A reserved direction for organizing simulation, data collection, policy learning, and real-robot validation.",
 
     notes_kicker: "Notes",
     notes_title: "Technical Notes",
-    notes_1_title: "Robotic System Building",
-    notes_1_text:
-      "Notes on cameras, manipulators, calibration, ROS 2, LeRobot, data collection, and experiment debugging.",
+    notes_1_title: "System Setup",
+    notes_1_text: "Cameras, arms, ROS 2, LeRobot, calibration, and debugging records.",
     notes_2_title: "Paper Reading",
-    notes_2_text:
-      "Reading notes on manipulation, VLA, diffusion policy, sim-to-real, and contact-rich manipulation.",
+    notes_2_text: "Notes on manipulation, VLA, diffusion policy, sim-to-real, and related papers.",
     notes_3_title: "Experiment Review",
-    notes_3_text:
-      "Analysis of failure cases, system errors, data distribution, seed variance, ablations, and evaluation metrics.",
+    notes_3_text: "Failure cases, error sources, metrics, ablations, and visualization.",
+    notes_4_title: "All Notes",
+    notes_4_text: "Open the note index. Obsidian Markdown notes can be added later.",
+
+    card_more: "Read more →",
+
+    cv_title: "CV",
+    cv_text: "Education, skills, projects, publications, and awards. For now this is a web CV; a PDF version can be added later.",
+    cv_button_web: "View Web CV",
+    cv_button_pdf: "Download PDF CV (optional)",
 
     contact_kicker: "Contact",
     contact_title: "Contact",
-    contact_text:
-      "If you are interested in robot manipulation, underwater grasping, embodied AI, or real robotic systems, feel free to contact me via email or GitHub.",
-
+    contact_text: "Feel free to contact me about robot manipulation, underwater grasping, embodied AI, or real robotic systems.",
     footer_text: "Built with GitHub Pages"
   }
+};
+
+const mottoLines = {
+  zh: [
+    "先让机器人稳定完成一个动作，再谈智能。",
+    "好的系统不是不会失败，而是失败后能被看见、被解释、被修复。",
+    "科研不是把 demo 做漂亮，而是把问题问清楚。",
+    "真正的泛化，通常从一次失败复盘开始。",
+    "机器人研究的浪漫，是把混乱的物理世界变成可验证的实验。",
+    "不要急着追热点，先找到十年后仍然重要的问题。",
+    "一次稳定的闭环，比十个悬浮的想法更有价值。",
+    "让实验替你说话，让日志替你记忆，让失败替你选题。"
+  ],
+  en: [
+    "Make one robotic behavior stable before calling it intelligence.",
+    "A good system is not one that never fails, but one whose failures can be seen, explained, and fixed.",
+    "Research is not about polishing a demo; it is about asking the right question.",
+    "Real generalization often starts from one carefully analyzed failure.",
+    "The romance of robotics is turning messy physics into testable experiments.",
+    "Do not chase every trend. Find problems that still matter ten years later.",
+    "One stable closed loop is worth more than ten floating ideas.",
+    "Let experiments speak, logs remember, and failures choose the next question."
+  ]
 };
 
 let currentLang = localStorage.getItem("preferredLang") || "zh";
@@ -216,15 +196,43 @@ function applyLanguage(lang) {
   });
 
   document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
-  document.getElementById("langToggle").textContent =
-    lang === "zh" ? "English" : "中文";
+  const toggle = document.getElementById("langToggle");
+  if (toggle) toggle.textContent = lang === "zh" ? "English" : "中文";
+
+  const motto = document.getElementById("mottoText");
+  if (motto) motto.textContent = mottoLines[lang][0];
 
   localStorage.setItem("preferredLang", lang);
 }
 
-document.getElementById("langToggle").addEventListener("click", () => {
-  currentLang = currentLang === "zh" ? "en" : "zh";
-  applyLanguage(currentLang);
-});
+function randomMotto() {
+  const motto = document.getElementById("mottoText");
+  if (!motto) return;
+
+  const lines = mottoLines[currentLang];
+  const current = motto.textContent;
+  let next = lines[Math.floor(Math.random() * lines.length)];
+
+  if (lines.length > 1) {
+    while (next === current) {
+      next = lines[Math.floor(Math.random() * lines.length)];
+    }
+  }
+
+  motto.textContent = next;
+}
+
+const langToggle = document.getElementById("langToggle");
+if (langToggle) {
+  langToggle.addEventListener("click", () => {
+    currentLang = currentLang === "zh" ? "en" : "zh";
+    applyLanguage(currentLang);
+  });
+}
+
+const mottoButton = document.getElementById("mottoButton");
+if (mottoButton) {
+  mottoButton.addEventListener("click", randomMotto);
+}
 
 applyLanguage(currentLang);
