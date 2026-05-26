@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Underwater Target Localization | Yuanyang Liu</title>
+  <title>论文阅读笔记 | Yuanyang Liu</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -26,24 +26,26 @@
     <section class="page-hero">
       <div class="container">
         <p class="section-kicker">Page</p>
-        <h1>Underwater Target Localization</h1>
-        <p>面向水下/类水下抓取的目标定位与视觉误差分析。</p>
+        <h1>论文阅读笔记</h1>
+        <p>整理 manipulation、VLA、diffusion policy、sim-to-real 等论文。</p>
       </div>
     </section>
 
     <section class="page-content">
       <div class="container">
         <article class="article">
-          <h2>问题</h2>
-<p>水下深度感知往往不可靠，当前重点不是泛泛讨论复杂海洋环境，而是分析折射、深度误差和目标定位误差如何影响抓取闭环。</p>
-<h2>可做内容</h2>
+          <h2>建议模板</h2>
 <ul>
-  <li>比较 RGB 检测、深度相机、双目 RGB 在水下/类水下设置中的稳定性。</li>
-  <li>记录目标位置估计误差和抓取成功率之间的关系。</li>
-  <li>区分感知误差和动作执行误差。</li>
+  <li>一句话总结。</li>
+  <li>问题定义。</li>
+  <li>核心方法。</li>
+  <li>关键假设。</li>
+  <li>实验设置与指标。</li>
+  <li>局限性。</li>
+  <li>和我的水下抓取课题有什么关系。</li>
 </ul>
-<h2>最低可复现实验</h2>
-<p>固定目标，在不同位置、不同视角和不同介质条件下采集估计误差，并与抓取结果关联。</p>
+<h2>判断标准</h2>
+<p>不是“这篇论文厉害吗”，而是它是否帮你更清楚地定义自己的问题。</p>
         </article>
       </div>
     </section>
