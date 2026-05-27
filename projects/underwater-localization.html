@@ -1,74 +1,73 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yuanyang Liu | Underwater Target Localization</title>
-  <meta name="description" content="Yuanyang Liu personal homepage: embodied AI, robot manipulation, underwater grasping, projects, notes, publications, and CV." />
-  <link rel="stylesheet" href="/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yuanyang Liu | Underwater Target Localization</title>
+<meta content="Yuanyang Liu personal homepage: embodied AI, robot manipulation, underwater grasping, projects, notes, publications, and CV." name="description"/>
+<link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
-  <div class="container nav-container">
-    <a class="logo" href="/" data-zh="Home" data-en="Home">Home</a>
-
-    <nav class="nav-links" id="navLinks">
-      <a href="/" data-zh="首页" data-en="Home">首页</a>
-      <a href="/index.html#research" data-zh="研究" data-en="Research">研究</a>
-      <a href="/index.html#projects" data-zh="项目" data-en="Projects">项目</a>
-      <a href="/publications.html" data-zh="论文" data-en="Publications">论文</a>
-      <a href="/notes.html" data-zh="笔记" data-en="Notes">笔记</a>
-      <a href="/cv.html" data-zh="CV" data-en="CV">CV</a>
-      <a href="/index.html#contact" data-zh="联系" data-en="Contact">联系</a>
-    </nav>
-
-    <div class="nav-actions">
-      <button class="lang-toggle" id="langToggle">English</button>
-      <button class="menu-toggle" id="menuToggle">☰</button>
-    </div>
-  </div>
+<div class="container nav-container">
+<a class="logo" data-en="Home" data-zh="Home" href="/">Home</a>
+<nav class="nav-links" id="navLinks">
+<a data-en="Home" data-zh="首页" href="/">首页</a>
+<a data-en="Research" data-zh="研究" href="/index.html#research">研究</a>
+<a data-en="Projects" data-zh="项目" href="/index.html#projects">项目</a>
+<a data-en="Publications" data-zh="论文" href="/publications.html">论文</a>
+<a data-en="Notes" data-zh="笔记" href="/notes.html">笔记</a>
+<a data-en="CV" data-zh="CV" href="/cv.html">CV</a>
+<a data-en="Contact" data-zh="联系" href="/index.html#contact">联系</a>
+</nav>
+<div class="nav-actions">
+<button class="lang-toggle" id="langToggle">English</button>
+<button class="menu-toggle" id="menuToggle">☰</button>
+</div>
+</div>
 </header>
 <main>
-  <section class="page-hero">
-    <div class="container">
-      <p class="section-kicker">Project</p>
-      <h1>Underwater Target Localization</h1>
-      <p data-zh="面向水下/类水下环境的目标定位与坐标估计。" data-en="Target localization and coordinate estimation in underwater-inspired environments.">面向水下/类水下环境的目标定位与坐标估计。</p>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container detail-layout">
-      <article class="panel">
-        <a class="back-link" href="/index.html#projects" data-zh="← 返回项目列表" data-en="← Back to Projects">← 返回项目列表</a>
-        <h2 data-zh="目标" data-en="Goal">目标</h2>
-        <p data-zh="在深度感知不可靠、折射可能引入误差的情况下，得到可用于操作执行的目标位置估计。" data-en="Estimate target positions useful for manipulation when depth sensing is unreliable and refraction may introduce error.">在深度感知不可靠、折射可能引入误差的情况下，得到可用于操作执行的目标位置估计。</p>
-        <h2 data-zh="关键变量" data-en="Key Variables">关键变量</h2>
-        <ul><li data-zh="单目/双目 RGB 观测。" data-en="Monocular or stereo RGB observations.">单目/双目 RGB 观测。</li>
-<li data-zh="水下/类水下介质带来的几何误差。" data-en="Geometry errors caused by underwater-inspired media.">水下/类水下介质带来的几何误差。</li>
-<li data-zh="目标检测稳定性与时序滤波。" data-en="Detection stability and temporal filtering.">目标检测稳定性与时序滤波。</li></ul>
-        <h2 data-zh="核心问题" data-en="Core Question">核心问题</h2>
-        <p data-zh="在目标抓取任务中，需要多精确的定位才足够？哪些误差可以通过反馈恢复？" data-en="How accurate must localization be for grasping, and which errors can be recovered through feedback?">在目标抓取任务中，需要多精确的定位才足够？哪些误差可以通过反馈恢复？</p>
-      </article>
-      <aside class="side-nav">
-        <strong data-zh="项目切换" data-en="Projects">项目切换</strong>
-        <a href="/projects/d435i-so101.html">D435i + SO101</a>
-        <a href="/projects/underwater-localization.html">Underwater Localization</a>
-        <a href="/projects/planar-disturbance.html">Planar Disturbance</a>
-        <a href="/projects/sim-to-real.html">Sim-to-real</a>
-        <hr />
-        <a href="/" data-zh="首页" data-en="Home">首页</a>
-        <a href="/publications.html" data-zh="论文" data-en="Publications">论文</a>
-        <a href="/notes.html" data-zh="笔记" data-en="Notes">笔记</a>
-        <a href="/cv.html">CV</a>
-      </aside>
-    </div>
-  </section>
+<section class="page-hero">
+<div class="container">
+<p class="section-kicker">Project</p>
+<h1>Underwater Target Localization</h1>
+<p data-en="Target localization and coordinate estimation in underwater-inspired environments." data-zh="面向水下/类水下环境的目标定位与坐标估计。">面向水下/类水下环境的目标定位与坐标估计。</p>
+<p class="page-timestamp" data-en="Published: 2026-05-27" data-zh="发布时间：2026-05-27">发布时间：2026-05-27</p></div>
+</section>
+<section class="section">
+<div class="container detail-layout">
+<article class="panel">
+<a class="back-link" data-en="← Back to Projects" data-zh="← 返回项目列表" href="/index.html#projects">← 返回项目列表</a>
+<h2 data-en="Goal" data-zh="目标">目标</h2>
+<p data-en="Estimate target positions useful for manipulation when depth sensing is unreliable and refraction may introduce error." data-zh="在深度感知不可靠、折射可能引入误差的情况下，得到可用于操作执行的目标位置估计。">在深度感知不可靠、折射可能引入误差的情况下，得到可用于操作执行的目标位置估计。</p>
+<h2 data-en="Key Variables" data-zh="关键变量">关键变量</h2>
+<ul><li data-en="Monocular or stereo RGB observations." data-zh="单目/双目 RGB 观测。">单目/双目 RGB 观测。</li>
+<li data-en="Geometry errors caused by underwater-inspired media." data-zh="水下/类水下介质带来的几何误差。">水下/类水下介质带来的几何误差。</li>
+<li data-en="Detection stability and temporal filtering." data-zh="目标检测稳定性与时序滤波。">目标检测稳定性与时序滤波。</li></ul>
+<h2 data-en="Core Question" data-zh="核心问题">核心问题</h2>
+<p data-en="How accurate must localization be for grasping, and which errors can be recovered through feedback?" data-zh="在目标抓取任务中，需要多精确的定位才足够？哪些误差可以通过反馈恢复？">在目标抓取任务中，需要多精确的定位才足够？哪些误差可以通过反馈恢复？</p>
+<div class="content-timestamp"><span data-en="Published: 2026-05-27" data-zh="发布时间：2026-05-27">发布时间：2026-05-27</span></div></article>
+<aside class="side-nav">
+<strong data-en="Projects" data-zh="项目切换">项目切换</strong>
+<a href="/projects/d435i-so101.html">D435i + SO101</a>
+<a href="/projects/underwater-localization.html">Underwater Localization</a>
+<a href="/projects/planar-disturbance.html">Planar Disturbance</a>
+<a href="/projects/sim-to-real.html">Sim-to-real</a>
+
+
+
+
+
+</aside>
+</div>
+</section>
 </main>
 <footer class="footer">
-  <div class="container footer-content">
-    <span>© 2026 Yuanyang Liu</span>
-    <span data-zh="Built with GitHub Pages" data-en="Built with GitHub Pages">Built with GitHub Pages</span>
-  </div>
+<div class="container footer-content">
+<span>© 2026 Yuanyang Liu</span>
+<span data-en="Built with GitHub Pages" data-zh="Built with GitHub Pages">Built with GitHub Pages</span>
+</div>
 </footer>
 <script src="/script.js"></script>
 </body>

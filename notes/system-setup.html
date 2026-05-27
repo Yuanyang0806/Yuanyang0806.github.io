@@ -1,69 +1,68 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yuanyang Liu | System Setup Notes</title>
-  <meta name="description" content="Yuanyang Liu personal homepage: embodied AI, robot manipulation, underwater grasping, projects, notes, publications, and CV." />
-  <link rel="stylesheet" href="/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yuanyang Liu | System Setup Notes</title>
+<meta content="Yuanyang Liu personal homepage: embodied AI, robot manipulation, underwater grasping, projects, notes, publications, and CV." name="description"/>
+<link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
-  <div class="container nav-container">
-    <a class="logo" href="/" data-zh="Home" data-en="Home">Home</a>
-
-    <nav class="nav-links" id="navLinks">
-      <a href="/" data-zh="首页" data-en="Home">首页</a>
-      <a href="/index.html#research" data-zh="研究" data-en="Research">研究</a>
-      <a href="/index.html#projects" data-zh="项目" data-en="Projects">项目</a>
-      <a href="/publications.html" data-zh="论文" data-en="Publications">论文</a>
-      <a href="/notes.html" data-zh="笔记" data-en="Notes">笔记</a>
-      <a href="/cv.html" data-zh="CV" data-en="CV">CV</a>
-      <a href="/index.html#contact" data-zh="联系" data-en="Contact">联系</a>
-    </nav>
-
-    <div class="nav-actions">
-      <button class="lang-toggle" id="langToggle">English</button>
-      <button class="menu-toggle" id="menuToggle">☰</button>
-    </div>
-  </div>
+<div class="container nav-container">
+<a class="logo" data-en="Home" data-zh="Home" href="/">Home</a>
+<nav class="nav-links" id="navLinks">
+<a data-en="Home" data-zh="首页" href="/">首页</a>
+<a data-en="Research" data-zh="研究" href="/index.html#research">研究</a>
+<a data-en="Projects" data-zh="项目" href="/index.html#projects">项目</a>
+<a data-en="Publications" data-zh="论文" href="/publications.html">论文</a>
+<a data-en="Notes" data-zh="笔记" href="/notes.html">笔记</a>
+<a data-en="CV" data-zh="CV" href="/cv.html">CV</a>
+<a data-en="Contact" data-zh="联系" href="/index.html#contact">联系</a>
+</nav>
+<div class="nav-actions">
+<button class="lang-toggle" id="langToggle">English</button>
+<button class="menu-toggle" id="menuToggle">☰</button>
+</div>
+</div>
 </header>
 <main>
-  <section class="page-hero">
-    <div class="container">
-      <p class="section-kicker">Note</p>
-      <h1 data-zh="系统搭建记录" data-en="System Setup Notes">系统搭建记录</h1>
-      <p data-zh="记录相机、机械臂、标定、ROS 2、LeRobot、数据采集与调试过程。" data-en="Notes on cameras, manipulators, calibration, ROS 2, LeRobot, data collection, and debugging.">记录相机、机械臂、标定、ROS 2、LeRobot、数据采集与调试过程。</p>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container detail-layout">
-      <article class="panel">
-        <a class="back-link" href="/notes.html" data-zh="← 返回笔记列表" data-en="← Back to Notes">← 返回笔记列表</a>
-        <h2 data-zh="建议记录内容" data-en="Suggested Content">建议记录内容</h2><ul><li data-zh="硬件连接与版本信息。" data-en="Hardware connection and version information.">硬件连接与版本信息。</li>
-<li data-zh="标定文件路径、误差指标与验证截图。" data-en="Calibration paths, error metrics, and validation screenshots.">标定文件路径、误差指标与验证截图。</li>
-<li data-zh="命令行记录、报错信息与修复方式。" data-en="Commands, error messages, and fixes.">命令行记录、报错信息与修复方式。</li>
-<li data-zh="每次实验的环境、参数和结论。" data-en="Environment, parameters, and conclusions for each experiment.">每次实验的环境、参数和结论。</li></ul>
-      </article>
-      <aside class="side-nav">
-        <strong data-zh="笔记切换" data-en="Notes">笔记切换</strong>
-        <a href="/notes/system-setup.html" data-zh="系统搭建" data-en="System Setup">系统搭建</a>
-        <a href="/notes/paper-reading.html" data-zh="论文阅读" data-en="Paper Reading">论文阅读</a>
-        <a href="/notes/experiment-review.html" data-zh="实验复盘" data-en="Experiment Review">实验复盘</a>
-        <hr />
-        <a href="/" data-zh="首页" data-en="Home">首页</a>
-        <a href="/index.html#projects" data-zh="项目" data-en="Projects">项目</a>
-        <a href="/publications.html" data-zh="论文" data-en="Publications">论文</a>
-        <a href="/cv.html">CV</a>
-      </aside>
-    </div>
-  </section>
+<section class="page-hero">
+<div class="container">
+<p class="section-kicker">Note</p>
+<h1 data-en="System Setup Notes" data-zh="系统搭建记录">系统搭建记录</h1>
+<p data-en="Notes on cameras, manipulators, calibration, ROS 2, LeRobot, data collection, and debugging." data-zh="记录相机、机械臂、标定、ROS 2、LeRobot、数据采集与调试过程。">记录相机、机械臂、标定、ROS 2、LeRobot、数据采集与调试过程。</p>
+<p class="page-timestamp" data-en="Published: 2026-05-27" data-zh="发布时间：2026-05-27">发布时间：2026-05-27</p></div>
+</section>
+<section class="section">
+<div class="container detail-layout">
+<article class="panel">
+<a class="back-link" data-en="← Back to Notes" data-zh="← 返回笔记列表" href="/notes.html">← 返回笔记列表</a>
+<h2 data-en="Suggested Content" data-zh="建议记录内容">建议记录内容</h2><ul><li data-en="Hardware connection and version information." data-zh="硬件连接与版本信息。">硬件连接与版本信息。</li>
+<li data-en="Calibration paths, error metrics, and validation screenshots." data-zh="标定文件路径、误差指标与验证截图。">标定文件路径、误差指标与验证截图。</li>
+<li data-en="Commands, error messages, and fixes." data-zh="命令行记录、报错信息与修复方式。">命令行记录、报错信息与修复方式。</li>
+<li data-en="Environment, parameters, and conclusions for each experiment." data-zh="每次实验的环境、参数和结论。">每次实验的环境、参数和结论。</li></ul>
+<div class="content-timestamp"><span data-en="Published: 2026-05-27" data-zh="发布时间：2026-05-27">发布时间：2026-05-27</span></div></article>
+<aside class="side-nav">
+<strong data-en="Notes" data-zh="笔记切换">笔记切换</strong>
+<a data-en="System Setup" data-zh="系统搭建" href="/notes/system-setup.html">系统搭建</a>
+<a data-en="Paper Reading" data-zh="论文阅读" href="/notes/paper-reading.html">论文阅读</a>
+<a data-en="Experiment Review" data-zh="实验复盘" href="/notes/experiment-review.html">实验复盘</a>
+
+
+
+
+
+</aside>
+</div>
+</section>
 </main>
 <footer class="footer">
-  <div class="container footer-content">
-    <span>© 2026 Yuanyang Liu</span>
-    <span data-zh="Built with GitHub Pages" data-en="Built with GitHub Pages">Built with GitHub Pages</span>
-  </div>
+<div class="container footer-content">
+<span>© 2026 Yuanyang Liu</span>
+<span data-en="Built with GitHub Pages" data-zh="Built with GitHub Pages">Built with GitHub Pages</span>
+</div>
 </footer>
 <script src="/script.js"></script>
 </body>
