@@ -3,7 +3,7 @@
 This repository hosts my GitHub Pages personal website.
 
 ## Website
-Coming soon via GitHub Pages.
+https://yuanyang0806.github.io/
 
 ## Research Interests
 - Embodied AI
