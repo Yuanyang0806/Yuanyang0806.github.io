@@ -1,207 +1,74 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yuanyang Liu | Home</title>
-  <meta name="description" content="Yuanyang Liu personal homepage: embodied AI, robot manipulation, underwater grasping, projects, notes, publications, and CV." />
-  <link rel="stylesheet" href="/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yuanyang Liu | Planar Disturbance Platform</title>
+<meta content="Yuanyang Liu personal homepage: embodied AI, robot manipulation, underwater grasping, projects, notes, publications, and CV." name="description"/>
+<link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
-  <div class="container nav-container">
-    <a class="logo" href="/" data-zh="Home" data-en="Home">Home</a>
-
-    <nav class="nav-links" id="navLinks">
-      <a href="/" data-zh="首页" data-en="Home">首页</a>
-      <a href="/index.html#research" data-zh="研究" data-en="Research">研究</a>
-      <a href="/index.html#projects" data-zh="项目" data-en="Projects">项目</a>
-      <a href="/publications.html" data-zh="论文" data-en="Publications">论文</a>
-      <a href="/notes.html" data-zh="笔记" data-en="Notes">笔记</a>
-      <a href="/cv.html" data-zh="CV" data-en="CV">CV</a>
-      <a href="/index.html#contact" data-zh="联系" data-en="Contact">联系</a>
-    </nav>
-
-    <div class="nav-actions">
-      <button class="lang-toggle" id="langToggle">English</button>
-      <button class="menu-toggle" id="menuToggle">☰</button>
-    </div>
-  </div>
+<div class="container nav-container">
+<a class="logo" data-en="Home" data-zh="Home" href="/">Home</a>
+<nav class="nav-links" id="navLinks">
+<a data-en="Home" data-zh="首页" href="/">首页</a>
+<a data-en="Research" data-zh="研究" href="/index.html#research">研究</a>
+<a data-en="Projects" data-zh="项目" href="/index.html#projects">项目</a>
+<a data-en="Publications" data-zh="论文" href="/publications.html">论文</a>
+<a data-en="Notes" data-zh="笔记" href="/notes.html">笔记</a>
+<a data-en="CV" data-zh="CV" href="/cv.html">CV</a>
+<a data-en="Contact" data-zh="联系" href="/index.html#contact">联系</a>
+</nav>
+<div class="nav-actions">
+<button class="lang-toggle" id="langToggle">English</button>
+<button class="menu-toggle" id="menuToggle">☰</button>
+</div>
+</div>
 </header>
 <main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <p class="eyebrow" data-zh="具身智能 · 机器人操作 · 水下抓取" data-en="Embodied AI · Robot Manipulation · Underwater Grasping">具身智能 · 机器人操作 · 水下抓取</p>
-        <h1 data-zh="让机器人在真实系统中稳定完成操作任务" data-en="Building reliable robot manipulation systems in the real world">让机器人在真实系统中稳定完成操作任务</h1>
-        <p class="hero-description"
-           data-zh="我关注 robot manipulation 与 embodied AI。当前主要搭建水下/类水下抓取系统，研究动态目标感知、目标扰动、动作偏差与闭环恢复。"
-           data-en="I work on robot manipulation and embodied AI. My current focus is building underwater-inspired grasping systems and studying dynamic perception, target disturbance, action deviation, and closed-loop recovery.">我关注 robot manipulation 与 embodied AI。当前主要搭建水下/类水下抓取系统，研究动态目标感知、目标扰动、动作偏差与闭环恢复。</p>
+<section class="page-hero">
+<div class="container">
+<p class="section-kicker">Project</p>
+<h1>Planar Disturbance Platform</h1>
+<p data-en="A two-axis planar disturbance platform for dynamic targets and robust grasping." data-zh="二轴平面扰动平台，用于研究动态目标和抗扰抓取。">二轴平面扰动平台，用于研究动态目标和抗扰抓取。</p>
+<p class="page-timestamp" data-en="Published: 2026-05-27" data-zh="发布时间：2026-05-27">发布时间：2026-05-27</p></div>
+</section>
+<section class="section">
+<div class="container detail-layout">
+<article class="panel">
+<a class="back-link" data-en="← Back to Projects" data-zh="← 返回项目列表" href="/index.html#projects">← 返回项目列表</a>
+<h2 data-en="Goal" data-zh="目标">目标</h2>
+<p data-en="Use controlled disturbance to replace vague environmental complexity, making dynamic target grasping measurable and reproducible." data-zh="用可控扰动替代模糊的复杂环境，让动态目标抓取变成可以量化、可以复现实验的问题。">用可控扰动替代模糊的复杂环境，让动态目标抓取变成可以量化、可以复现实验的问题。</p>
+<h2 data-en="Key Variables" data-zh="关键变量">关键变量</h2>
+<ul><li data-en="Disturbance direction: x, y, or combined motion." data-zh="扰动方向：x / y / 组合运动。">扰动方向：x / y / 组合运动。</li>
+<li data-en="Amplitude: target displacement range." data-zh="扰动幅值：目标偏移范围。">扰动幅值：目标偏移范围。</li>
+<li data-en="Frequency: target motion speed and rhythm." data-zh="扰动频率：目标运动速度和节奏。">扰动频率：目标运动速度和节奏。</li>
+<li data-en="Feedback strategy: open-loop grasping, visual feedback, prediction, and recovery." data-zh="反馈策略：开环抓取、视觉反馈、预测补偿、失败恢复。">反馈策略：开环抓取、视觉反馈、预测补偿、失败恢复。</li></ul>
+<h2 data-en="Core Question" data-zh="核心问题">核心问题</h2>
+<p data-en="When is feedback correction sufficient? When is prediction necessary? When should the system abandon the current action and replan?" data-zh="什么时候只需要反馈修正？什么时候必须预测？什么时候应该放弃当前动作并重新规划？">什么时候只需要反馈修正？什么时候必须预测？什么时候应该放弃当前动作并重新规划？</p>
+<div class="content-timestamp"><span data-en="Published: 2026-05-27" data-zh="发布时间：2026-05-27">发布时间：2026-05-27</span></div></article>
+<aside class="side-nav">
+<strong data-en="Projects" data-zh="项目切换">项目切换</strong>
+<a href="/projects/d435i-so101.html">D435i + SO101</a>
+<a href="/projects/underwater-localization.html">Underwater Localization</a>
+<a href="/projects/planar-disturbance.html">Planar Disturbance</a>
+<a href="/projects/sim-to-real.html">Sim-to-real</a>
 
-        <div class="hero-actions">
-          <a href="#projects" class="button primary" data-zh="查看项目" data-en="View Projects">查看项目</a>
-          <a href="/cv.html" class="button" data-zh="查看 CV" data-en="View CV">查看 CV</a>
-        </div>
 
-        <div class="quick-info">
-          <div>
-            <span class="quick-label" data-zh="身份" data-en="Role">身份</span>
-            <span data-zh="硕博生 / Graduate Student" data-en="Graduate Student">硕博生 / Graduate Student</span>
-          </div>
-          <div>
-            <span class="quick-label" data-zh="方向" data-en="Focus">方向</span>
-            <span>Robot Manipulation</span>
-          </div>
-          <div>
-            <span class="quick-label" data-zh="邮箱" data-en="Email">邮箱</span>
-            <span>2283523323@qq.com</span>
-          </div>
-        </div>
-      </div>
 
-      <aside class="profile-card">
-        <div class="avatar-wrap">
-          <img src="/avatar.jpg" alt="Yuanyang Liu" class="avatar" onerror="this.style.display='none'; this.parentElement.style.background='#e7efff';" />
-        </div>
-        <h2>Yuanyang Liu</h2>
-        <p class="profile-subtitle">Embodied AI / Robot Manipulation</p>
-        <p class="profile-text"
-           data-zh="当前关注：水下抓取、动态目标、抗扰操作、视觉反馈与恢复。"
-           data-en="Current focus: underwater grasping, dynamic targets, robust manipulation, visual feedback, and recovery.">当前关注：水下抓取、动态目标、抗扰操作、视觉反馈与恢复。</p>
-        <div class="profile-links">
-          <a href="mailto:2283523323@qq.com">Email</a>
-          <a href="https://github.com/Yuanyang0806" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </aside>
-    </div>
-  </section>
 
-  <section id="about" class="section">
-    <div class="container two-column">
-      <div>
-        <p class="section-kicker">About</p>
-        <h2 data-zh="关于我" data-en="About Me">关于我</h2>
-      </div>
-      <div class="content-block">
-        <p data-zh="我是一名具身智能与机器人操作方向的研究生。相比只做网页展示，我更希望主页记录真实系统、实验过程、失败案例和逐步形成的研究问题。"
-           data-en="I am a graduate student working on embodied AI and robot manipulation. I use this homepage to record systems, experiments, failure cases, and research questions emerging from real robotic work.">我是一名具身智能与机器人操作方向的研究生。相比只做网页展示，我更希望主页记录真实系统、实验过程、失败案例和逐步形成的研究问题。</p>
-        <p data-zh="当前工作围绕一个最小闭环抓取系统展开：感知目标、估计位置、执行动作、观察偏差，并逐步加入扰动和恢复机制。"
-           data-en="My current work starts from a minimal closed-loop grasping system: perceive the target, estimate its position, execute actions, observe deviations, and gradually add disturbance and recovery mechanisms.">当前工作围绕一个最小闭环抓取系统展开：感知目标、估计位置、执行动作、观察偏差，并逐步加入扰动和恢复机制。</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="research" class="section muted">
-    <div class="container">
-      <p class="section-kicker">Research</p>
-      <h2 data-zh="研究方向" data-en="Research Interests">研究方向</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3 data-zh="Underwater robotic manipulation" data-en="Underwater robotic manipulation">Underwater robotic manipulation</h3>
-          <p data-zh="水下/类水下抓取系统、目标定位、闭环执行与实验协议。" data-en="Underwater-inspired grasping systems, target localization, closed-loop execution, and experimental protocols.">水下/类水下抓取系统、目标定位、闭环执行与实验协议。</p>
-        </article>
-        <article class="card">
-          <h3 data-zh="Dynamic target perception" data-en="Dynamic target perception">Dynamic target perception</h3>
-          <p data-zh="面向运动或受扰目标的视觉跟踪、状态估计与操作表征。" data-en="Visual tracking, state estimation, and manipulation-oriented representations for moving or disturbed objects.">面向运动或受扰目标的视觉跟踪、状态估计与操作表征。</p>
-        </article>
-        <article class="card">
-          <h3 data-zh="Robust grasping under disturbance" data-en="Robust grasping under disturbance">Robust grasping under disturbance</h3>
-          <p data-zh="目标扰动、执行偏差、失败检测、纠偏与恢复。" data-en="Target disturbance, execution deviation, failure detection, correction, and recovery.">目标扰动、执行偏差、失败检测、纠偏与恢复。</p>
-        </article>
-        <article class="card">
-          <h3 data-zh="Policy learning for manipulation" data-en="Policy learning for manipulation">Policy learning for manipulation</h3>
-          <p data-zh="模仿学习、强化学习、VLA 与 diffusion policy 在真实操作任务中的应用与失效分析。" data-en="Imitation learning, reinforcement learning, VLA models, and diffusion policies for real manipulation tasks.">模仿学习、强化学习、VLA 与 diffusion policy 在真实操作任务中的应用与失效分析。</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <p class="section-kicker">Projects</p>
-      <h2 data-zh="项目" data-en="Projects">项目</h2>
-      <div class="project-grid">
-        <a class="project-card" href="/projects/d435i-so101.html">
-          <span class="project-meta">System</span>
-          <h3>D435i + SO101 Visual Grasping System</h3>
-          <p data-zh="基于 D435i 与 SO101 的视觉抓取最小闭环。" data-en="A minimal visual grasping loop based on D435i and SO101.">基于 D435i 与 SO101 的视觉抓取最小闭环。</p>
-        </a>
-        <a class="project-card" href="/projects/underwater-localization.html">
-          <span class="project-meta">Vision</span>
-          <h3>Underwater Target Localization</h3>
-          <p data-zh="面向水下/类水下环境的目标定位与坐标估计。" data-en="Target localization and coordinate estimation in underwater-inspired environments.">面向水下/类水下环境的目标定位与坐标估计。</p>
-        </a>
-        <a class="project-card" href="/projects/planar-disturbance.html">
-          <span class="project-meta">Experiment</span>
-          <h3>Planar Disturbance Platform</h3>
-          <p data-zh="二轴平面扰动平台，用于研究动态目标与抗扰抓取。" data-en="A two-axis planar disturbance platform for dynamic targets and robust grasping.">二轴平面扰动平台，用于研究动态目标与抗扰抓取。</p>
-        </a>
-        <a class="project-card" href="/projects/sim-to-real.html">
-          <span class="project-meta">Pipeline</span>
-          <h3>Sim-to-real Manipulation Pipeline</h3>
-          <p data-zh="后续用于组织仿真、数据、策略学习和真机验证。" data-en="A future pipeline for simulation, data, policy learning, and real-robot validation.">后续用于组织仿真、数据、策略学习和真机验证。</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="publications" class="section muted">
-    <div class="container two-column">
-      <div>
-        <p class="section-kicker">Publications</p>
-        <h2 data-zh="论文与成果" data-en="Publications">论文与成果</h2>
-      </div>
-      <div class="content-block">
-        <p data-zh="这里后续放论文、preprint、poster、技术报告、代码链接。当前先作为成果占位，不做过度包装。" data-en="This section will list papers, preprints, posters, technical reports, and code links. For now, it remains a clean placeholder.">这里后续放论文、preprint、poster、技术报告、代码链接。当前先作为成果占位，不做过度包装。</p>
-        <a class="button" href="/publications.html" data-zh="进入论文页" data-en="Open Publications">进入论文页</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="notes" class="section">
-    <div class="container">
-      <p class="section-kicker">Notes</p>
-      <h2 data-zh="笔记" data-en="Notes">笔记</h2>
-      <div class="card-grid">
-        <a class="card" href="/notes/system-setup.html">
-          <h3 data-zh="系统搭建记录" data-en="System Setup">系统搭建记录</h3>
-          <p data-zh="相机、机械臂、标定、ROS 2、LeRobot、实验调试。" data-en="Camera, manipulator, calibration, ROS 2, LeRobot, and debugging notes.">相机、机械臂、标定、ROS 2、LeRobot、实验调试。</p>
-        </a>
-        <a class="card" href="/notes/paper-reading.html">
-          <h3 data-zh="论文阅读" data-en="Paper Reading">论文阅读</h3>
-          <p data-zh="manipulation、VLA、diffusion policy、sim-to-real 等论文整理。" data-en="Notes on manipulation, VLA, diffusion policy, sim-to-real, and related topics.">manipulation、VLA、diffusion policy、sim-to-real 等论文整理。</p>
-        </a>
-        <a class="card" href="/notes/experiment-review.html">
-          <h3 data-zh="实验复盘" data-en="Experiment Review">实验复盘</h3>
-          <p data-zh="失败案例、误差来源、数据分布、评估指标与 ablation。" data-en="Failure cases, error sources, data distribution, metrics, and ablations.">失败案例、误差来源、数据分布、评估指标与 ablation。</p>
-        </a>
-        <a class="card" href="/notes.html">
-          <h3 data-zh="更多笔记" data-en="More Notes">更多笔记</h3>
-          <p data-zh="进入笔记索引页，后续可持续添加 Obsidian 输出内容。" data-en="Open the notes index. More Obsidian-exported notes can be added later.">进入笔记索引页，后续可持续添加 Obsidian 输出内容。</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact-section">
-    <div class="container contact-card">
-      <div>
-        <p class="section-kicker">Contact</p>
-        <h2 data-zh="联系" data-en="Contact">联系</h2>
-        <p data-zh="如果你对机器人操作、具身智能、水下抓取或真实机器人系统感兴趣，可以通过邮箱或 GitHub 联系我。" data-en="If you are interested in robot manipulation, embodied AI, underwater grasping, or real robotic systems, feel free to contact me by email or GitHub.">如果你对机器人操作、具身智能、水下抓取或真实机器人系统感兴趣，可以通过邮箱或 GitHub 联系我。</p>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:2283523323@qq.com">2283523323@qq.com</a>
-        <a href="https://github.com/Yuanyang0806" target="_blank" rel="noopener">github.com/Yuanyang0806</a>
-      </div>
-    </div>
-  </section>
+</aside>
+</div>
+</section>
 </main>
 <footer class="footer">
-  <div class="container footer-content">
-    <span>© 2026 Yuanyang Liu</span>
-    <span data-zh="Built with GitHub Pages" data-en="Built with GitHub Pages">Built with GitHub Pages</span>
-  </div>
+<div class="container footer-content">
+<span>© 2026 Yuanyang Liu</span>
+<span data-en="Built with GitHub Pages" data-zh="Built with GitHub Pages">Built with GitHub Pages</span>
+</div>
 </footer>
 <script src="/script.js"></script>
 </body>
