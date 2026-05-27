@@ -3,85 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV | Yuanyang Liu</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Yuanyang Liu | Publications</title>
+  <meta name="description" content="Yuanyang Liu personal homepage: embodied AI, robot manipulation, underwater grasping, projects, notes, publications, and CV." />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">Home</a>
-      <nav class="nav-links">
-        <a href="index.html">首页</a>
-        <a href="index.html#research">研究</a>
-        <a href="index.html#projects">项目</a>
-        <a href="publications.html">论文</a>
-        <a href="notes.html">笔记</a>
-        <a href="cv.html">CV</a>
-        <a href="index.html#contact">联系</a>
-      </nav>
+<header class="site-header">
+  <div class="container nav-container">
+    <a class="logo" href="/" data-zh="Home" data-en="Home">Home</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="/" data-zh="首页" data-en="Home">首页</a>
+      <a href="/index.html#research" data-zh="研究" data-en="Research">研究</a>
+      <a href="/index.html#projects" data-zh="项目" data-en="Projects">项目</a>
+      <a href="/publications.html" data-zh="论文" data-en="Publications">论文</a>
+      <a href="/notes.html" data-zh="笔记" data-en="Notes">笔记</a>
+      <a href="/cv.html" data-zh="CV" data-en="CV">CV</a>
+      <a href="/index.html#contact" data-zh="联系" data-en="Contact">联系</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle">English</button>
+      <button class="menu-toggle" id="menuToggle">☰</button>
     </div>
-  </header>
-
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="section-kicker">Page</p>
-        <h1>CV</h1>
-        <p>教育经历、技能、项目、论文和奖项。</p>
-      </div>
-    </section>
-
-    <section class="page-content">
-      <div class="container">
-        <article class="article">
-          <h2>Education</h2>
-<ul>
-  <li>Graduate Student, Embodied AI / Robot Manipulation. Update with your university and lab information.</li>
-</ul>
-
-<h2>Research Interests</h2>
-<ul>
-  <li>Robot manipulation</li>
-  <li>Underwater robotic grasping</li>
-  <li>Dynamic target perception</li>
-  <li>Robust grasping under disturbance</li>
-  <li>Imitation learning / policy learning for manipulation</li>
-</ul>
-
-<h2>Projects</h2>
-<ul>
-  <li>D435i + SO101 Visual Grasping System</li>
-  <li>Underwater Target Localization</li>
-  <li>Planar Disturbance Platform for Manipulation</li>
-  <li>Sim-to-Real Manipulation Pipeline</li>
-</ul>
-
-<h2>Skills</h2>
-<ul>
-  <li>Python, basic robotics programming, experimental logging.</li>
-  <li>ROS 2, LeRobot, RealSense D435i, SO101 manipulator.</li>
-  <li>Computer vision, calibration, robot manipulation experiments.</li>
-</ul>
-
-<h2>Publications</h2>
-<p>Coming soon.</p>
-
-<h2>Awards</h2>
-<p>Update later.</p>
-
-<h2>PDF CV</h2>
-<p>To enable the PDF button, upload your PDF as <code>assets/cv.pdf</code>.</p>
-
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <span>© 2026 Yuanyang Liu</span>
-      <span>Built with GitHub Pages</span>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-kicker">Publications</p>
+      <h1 data-zh="论文与成果" data-en="Publications and Outputs">论文与成果</h1>
+      <p data-zh="后续这里放正式论文、预印本、poster、技术报告与代码链接。当前先保持占位，避免过度包装未完成成果。"
+         data-en="This page will list papers, preprints, posters, technical reports, and code links. It is currently kept as a clean placeholder.">后续这里放正式论文、预印本、poster、技术报告与代码链接。当前先保持占位，避免过度包装未完成成果。</p>
     </div>
-  </footer>
+  </section>
+  <section class="section">
+    <div class="container detail-layout">
+      <article class="panel">
+        <h2 data-zh="Preprints / Papers" data-en="Preprints / Papers">Preprints / Papers</h2>
+        <p data-zh="Coming soon. 等有投稿、预印本或技术报告后再补充。"
+           data-en="Coming soon. This section will be updated when preprints, submissions, or technical reports are available.">Coming soon. 等有投稿、预印本或技术报告后再补充。</p>
+        <h2 data-zh="推荐维护格式" data-en="Suggested Entry Format">推荐维护格式</h2>
+        <ul>
+          <li data-zh="Title：论文标题" data-en="Title: paper title">Title：论文标题</li>
+          <li data-zh="Authors：作者列表" data-en="Authors: author list">Authors：作者列表</li>
+          <li data-zh="Venue：会议/期刊/预印本平台" data-en="Venue: conference, journal, or preprint server">Venue：会议/期刊/预印本平台</li>
+          <li data-zh="Links：paper / code / project / poster" data-en="Links: paper / code / project / poster">Links：paper / code / project / poster</li>
+        </ul>
+      </article>
+      <aside class="side-nav">
+        <strong data-zh="页面切换" data-en="Navigation">页面切换</strong>
+        <a href="/">Home</a>
+        <a href="/index.html#projects" data-zh="项目" data-en="Projects">项目</a>
+        <a href="/notes.html" data-zh="笔记" data-en="Notes">笔记</a>
+        <a href="/cv.html">CV</a>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-content">
+    <span>© 2026 Yuanyang Liu</span>
+    <span data-zh="Built with GitHub Pages" data-en="Built with GitHub Pages">Built with GitHub Pages</span>
+  </div>
+</footer>
+<script src="/script.js"></script>
 </body>
 </html>

@@ -3,57 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>实验复盘笔记 | Yuanyang Liu</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>Yuanyang Liu | Experiment Review</title>
+  <meta name="description" content="Yuanyang Liu personal homepage: embodied AI, robot manipulation, underwater grasping, projects, notes, publications, and CV." />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="../index.html" class="logo">Home</a>
-      <nav class="nav-links">
-        <a href="../index.html">首页</a>
-        <a href="../index.html#research">研究</a>
-        <a href="../index.html#projects">项目</a>
-        <a href="../publications.html">论文</a>
-        <a href="../notes.html">笔记</a>
-        <a href="../cv.html">CV</a>
-        <a href="../index.html#contact">联系</a>
-      </nav>
+<header class="site-header">
+  <div class="container nav-container">
+    <a class="logo" href="/" data-zh="Home" data-en="Home">Home</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="/" data-zh="首页" data-en="Home">首页</a>
+      <a href="/index.html#research" data-zh="研究" data-en="Research">研究</a>
+      <a href="/index.html#projects" data-zh="项目" data-en="Projects">项目</a>
+      <a href="/publications.html" data-zh="论文" data-en="Publications">论文</a>
+      <a href="/notes.html" data-zh="笔记" data-en="Notes">笔记</a>
+      <a href="/cv.html" data-zh="CV" data-en="CV">CV</a>
+      <a href="/index.html#contact" data-zh="联系" data-en="Contact">联系</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle">English</button>
+      <button class="menu-toggle" id="menuToggle">☰</button>
     </div>
-  </header>
-
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="section-kicker">Page</p>
-        <h1>实验复盘笔记</h1>
-        <p>分析失败案例、系统误差、数据分布、消融和评估指标。</p>
-      </div>
-    </section>
-
-    <section class="page-content">
-      <div class="container">
-        <article class="article">
-          <h2>一次实验复盘至少回答</h2>
-<ul>
-  <li>这次实验改变了哪个变量？</li>
-  <li>失败发生在感知、规划、控制、执行还是接触阶段？</li>
-  <li>有多少样本？是否存在偶然性？</li>
-  <li>指标是否支持结论？</li>
-  <li>下一次实验应该删掉什么、固定什么、只改变什么？</li>
-</ul>
-<h2>建议</h2>
-<p>每次实验都留一张结果图、一段日志、一条结论和一个下一步动作。</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <span>© 2026 Yuanyang Liu</span>
-      <span>Built with GitHub Pages</span>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-kicker">Note</p>
+      <h1 data-zh="实验复盘" data-en="Experiment Review">实验复盘</h1>
+      <p data-zh="记录失败案例、误差来源、数据分布、评估指标与下一步修正。" data-en="Failure cases, error sources, data distribution, metrics, and next-step fixes.">记录失败案例、误差来源、数据分布、评估指标与下一步修正。</p>
     </div>
-  </footer>
+  </section>
+  <section class="section">
+    <div class="container detail-layout">
+      <article class="panel">
+        <a class="back-link" href="/notes.html" data-zh="← 返回笔记列表" data-en="← Back to Notes">← 返回笔记列表</a>
+        <h2 data-zh="推荐记录内容" data-en="Suggested Content">推荐记录内容</h2><ul><li data-zh="实验目标与假设。" data-en="Goal and hypothesis.">实验目标与假设。</li>
+<li data-zh="变量和控制条件。" data-en="Variables and control conditions.">变量和控制条件。</li>
+<li data-zh="成功率、恢复率、轨迹误差。" data-en="Success rate, recovery rate, and trajectory error.">成功率、恢复率、轨迹误差。</li>
+<li data-zh="失败案例截图或视频链接。" data-en="Screenshots or videos of failure cases.">失败案例截图或视频链接。</li>
+<li data-zh="下一轮实验要改什么。" data-en="What to change in the next experiment.">下一轮实验要改什么。</li></ul>
+      </article>
+      <aside class="side-nav">
+        <strong data-zh="笔记切换" data-en="Notes">笔记切换</strong>
+        <a href="/notes/system-setup.html" data-zh="系统搭建" data-en="System Setup">系统搭建</a>
+        <a href="/notes/paper-reading.html" data-zh="论文阅读" data-en="Paper Reading">论文阅读</a>
+        <a href="/notes/experiment-review.html" data-zh="实验复盘" data-en="Experiment Review">实验复盘</a>
+        <hr />
+        <a href="/" data-zh="首页" data-en="Home">首页</a>
+        <a href="/index.html#projects" data-zh="项目" data-en="Projects">项目</a>
+        <a href="/publications.html" data-zh="论文" data-en="Publications">论文</a>
+        <a href="/cv.html">CV</a>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-content">
+    <span>© 2026 Yuanyang Liu</span>
+    <span data-zh="Built with GitHub Pages" data-en="Built with GitHub Pages">Built with GitHub Pages</span>
+  </div>
+</footer>
+<script src="/script.js"></script>
 </body>
 </html>
